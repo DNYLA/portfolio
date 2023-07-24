@@ -1,5 +1,6 @@
 'use client';
 import Card from '@/components/card';
+import ExperienceItem from '@/components/experience-item';
 import Heading from '@/components/heading';
 import PageHeader from '@/components/page-header';
 import Section from '@/components/section';
@@ -46,6 +47,24 @@ export default function Home() {
                 View All
               </button>
             </NextLink>
+          </div>
+        </Section>
+
+        <Section delay={0.2}>
+          <Heading>Experience</Heading>
+          <div className="flex flex-col gap-2">
+            <ExperienceItem year={'2002'}>
+              Born in United Kingdom
+            </ExperienceItem>
+
+            <ExperienceItem year={'2021'}>
+              Founded and worked at Labmaker
+            </ExperienceItem>
+
+            <ExperienceItem year={'2023'}>
+              Graduated Masters program at Liverpool University for Computer
+              Science with Software Development (2:1).
+            </ExperienceItem>
           </div>
         </Section>
       </div>
