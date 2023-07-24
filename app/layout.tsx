@@ -25,7 +25,9 @@ export default function RootLayout({
 
       <body className={`${mPlus1C.className}`}>
         <Navbar />
-        <div className="container mx-auto bg-[#111313]">{children}</div>
+        <div className="container flex justify-center mt-[80px]">
+          {children}
+        </div>
       </body>
     </html>
   );

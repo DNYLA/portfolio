@@ -1,5 +1,7 @@
+'use client';
 import React from 'react';
 import NextLink from 'next/link';
+import { usePathname } from 'next/navigation';
 interface NavItemProps {
   href: string;
   path: string;
@@ -7,25 +9,37 @@ interface NavItemProps {
 }
 
 const NavItem = ({ href, path, children }: NavItemProps) => {
-  const active = path === href;
+  const active = href === path;
+  const backCol = active ? 'bg-red-300' : 'bg-pink-300';
 
   return (
-    <NextLink href={href}>
-      <span className={active ? 'red' : 'blue'}>{children}</span>
+    <NextLink
+      href={href}
+      className={`hover:opacity-50 hover:scale-[115%] scale-100 transition-all`}
+    >
+      <span className={``}>{children}</span>
     </NextLink>
   );
 };
 
 const Navbar = () => {
+  const path = usePathname();
+
   return (
-    <div className="bg-neutral-900 fixed w-full">
-      <div className="p-2 container flex mx-auto justify-center gap-x-8">
-        <h1 className="text-2xl cursor-pointer hover:opacity-75 transition">
-          Danyaal Ahmed
-        </h1>
+    <div className="fixed w-full h-[50px] top-0">
+      <div className="p-2 container flex mx-auto justify-center gap-x-8 backdrop-blur-3xl">
+        <NextLink href={'/'}>
+          <h1 className="text-2xl font-medium cursor-pointer hover:opacity-75 transition ">
+            Danyaal Ahmed
+          </h1>
+        </NextLink>
         <div className="flex gap-x-3 items-center text-base">
-          <span>Projects</span>
-          <span>Log</span>
+          <NavItem href="/projects" path={path}>
+            Projects
+          </NavItem>
+          <NavItem href="/log" path={path}>
+            Log
+          </NavItem>
         </div>
       </div>
     </div>
