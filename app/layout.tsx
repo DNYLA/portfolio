@@ -25,9 +25,8 @@ export default function RootLayout({
 
       <body className={`${mPlus1C.className}`}>
         <Navbar />
-        <div className="container flex justify-center mt-[80px]">
-          {children}
-        </div>
+        {/* TODO: Find a better way than having to set padding to 300PX? */}
+        <div className="container mx-auto px-[300px]  mt-24">{children}</div>
       </body>
     </html>
   );
