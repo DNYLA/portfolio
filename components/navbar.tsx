@@ -26,7 +26,7 @@ const Navbar = () => {
   const path = usePathname();
 
   return (
-    <div className="fixed w-full h-[50px] top-0">
+    <div className="fixed w-full h-[50px] top-0 z-10">
       <div className="p-2 container flex mx-auto justify-center gap-x-8 backdrop-blur-3xl">
         <NextLink href={'/'}>
           <h1 className="text-2xl font-medium cursor-pointer hover:opacity-75 transition ">
