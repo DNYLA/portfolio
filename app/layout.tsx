@@ -19,14 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
         <title>Danyaal Ahmed - Homepage</title>
       </Head>
 
       <body className={`${mPlus1C.className}`}>
         <Navbar />
         {/* TODO: Find a better way than having to set padding to 300PX? */}
-        <div className="container mx-auto p-5 xl:px-[400px]  mt-24">
+        <div className="container mx-auto p-5 2xl:px-[400px] mt-24">
           {children}
         </div>
       </body>

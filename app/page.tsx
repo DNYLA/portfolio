@@ -26,7 +26,7 @@ export default function Home() {
 
         <Section delay={0.2}>
           <Heading>Projects</Heading>
-          <div className="grid grid-cols-3 content-between py-3 p-10 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-3 p-10">
             <Card
               title="Labmaker"
               image="https://insidescientific.com/wp-content/uploads/2021/05/LabMaker.jpg"
