@@ -10,7 +10,7 @@ interface CardProps {
   delay?: number;
 }
 
-const Card = ({ title, image, href, delay }: CardProps) => {
+const ProjectCard = ({ title, image, href, delay }: CardProps) => {
   console.log(delay);
   const variant = {
     visible: {
@@ -28,19 +28,21 @@ const Card = ({ title, image, href, delay }: CardProps) => {
 
   return (
     <motion.div
-      className="flex flex-col cursor-pointer hover:scale-110 transition group items-center"
+      className="flex flex-col rounded-md bg-[#202023] cursor-pointer group hover:bg-[#313134] hover:scale-150 hover:skew-y-2 transition items-center pt-4 p-2"
       variants={variant}
     >
       <Image
-        className="border-solid max-w-[175px] inline-block rounded hover:skew-y-2 hover:skew-x-4"
+        className="border-solid max-w-[175px] rounded inline-block  group-hover:scale-110"
         src="https://avatars.githubusercontent.com/u/22224922?v=4"
         width={175}
         height={175}
         alt="Profile Image"
       />
-      <span className="text-neutral-300 ">{title}</span>
+      <span className="text-neutral-300 group-hover:scale-110 mt-2">
+        {title}
+      </span>
     </motion.div>
   );
 };
 
-export default Card;
+export default ProjectCard;
