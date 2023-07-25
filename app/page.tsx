@@ -44,11 +44,11 @@ export default function Home() {
             />
           </div>
           <div className="flex items-center justify-center mt-2">
-            <NextLink href={'/projects'}>
+            <Link href={'/projects'}>
               <button className="text-sm cursor-pointer rounded hover:rounded-md bg-emerald-500 p-2 hover:bg-emerald-400 text-black">
                 View All
               </button>
-            </NextLink>
+            </Link>
           </div>
         </Section>
 
