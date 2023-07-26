@@ -2,6 +2,7 @@
 import React from 'react';
 import NextLink from 'next/link';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 interface NavItemProps {
   href: string;
   path: string;
@@ -28,11 +29,11 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[50px] top-0 z-10">
       <div className="p-2 container flex mx-auto justify-center gap-x-8 backdrop-blur-3xl">
-        <NextLink href={'/'}>
+        <Link href={'/'}>
           <h1 className="text-2xl font-medium cursor-pointer hover:opacity-75 transition ">
             Danyaal Ahmed
           </h1>
-        </NextLink>
+        </Link>
         <div className="flex gap-x-3 items-center text-base">
           <NavItem href="/projects" path={path}>
             Projects

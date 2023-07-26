@@ -1,3 +1,4 @@
+import Button from '@/components/button';
 import Card from '@/components/card';
 import ExperienceItem from '@/components/experience-item';
 import Heading from '@/components/heading';
@@ -21,10 +22,8 @@ export default function Home() {
         <Section delay={0.1}>
           <Heading>Introduction</Heading>
           <p className="text-base font-light indent-8">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non vel
-            perspiciatis dolorum nam odit possimus quaerat ea quidem earum atque
-            fuga consectetur officiis neque, doloribus rem nemo assumenda
-            facilis voluptates InkDrop.
+            I spend all my time making open source full stack applicatons that
+            get used by only me.
           </p>
         </Section>
 
@@ -49,9 +48,7 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-center mt-2">
             <Link href={'/projects'}>
-              <button className="text-sm cursor-pointer rounded hover:rounded-md bg-emerald-500 p-2 hover:bg-emerald-400 text-black">
-                View All
-              </button>
+              <Button>View All</Button>
             </Link>
           </div>
         </Section>

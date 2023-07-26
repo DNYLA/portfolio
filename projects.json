@@ -42,7 +42,7 @@
   },
   {
     "name": "Saran",
-    "description": "Saran is a discord bot which allows users to interact with their last.fm account on discord displaying their music stats to other users with ease. Moderation & Search commands that use other external APIS are also included (Image Search, Riddle, Youtube, Ban, etc) ",
+    "description": "Saran is a multi-purpose bot that reaches over 25,000 members on discord. Users can interact with their Last.fm account on discord displaying their music stats to other users with ease. Moderation & Search commands that use external APIS are also included (Image Search, Riddle, Youtube, Ban, etc) ",
     "year": "2022",
     "platform": "Discord",
     "stack": "NodeJS / Discord.js",
