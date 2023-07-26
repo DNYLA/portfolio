@@ -5,6 +5,7 @@ import PageHeader from '@/components/page-header';
 
 export default async function Projects() {
   const data = await getProjects();
+
   return (
     <main className="bg-red">
       <PageHeader title="Projects" />
@@ -20,7 +21,7 @@ export default async function Projects() {
           </h1> */}
 
         {/* </Section> */}
-        <ProjectGrid />
+        <ProjectGrid projects={data} />
       </div>
     </main>
   );

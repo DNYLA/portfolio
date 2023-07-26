@@ -4,10 +4,10 @@ import Image from 'next/image';
 import React from 'react';
 
 interface PageHeaderProps {
-  title: string;
+  children: React.ReactNode;
 }
 
-const PageHeader = ({ title }: PageHeaderProps) => {
+const PageHeader = ({ children }: PageHeaderProps) => {
   return (
     <div className="flex flex-col gap-2 w-full align-middle text-center items-center justify-center">
       <h1 className="text-4xl">Danyaal Ahmed</h1>
