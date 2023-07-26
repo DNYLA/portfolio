@@ -63,7 +63,7 @@ export default async function Home() {
             </ExperienceItem>
 
             <ExperienceItem year={'2023'}>
-              Graduated Bachelor&#39;s program at Liverpool University for
+              Graduated Bachelor&#39;s program at University of Liverpool for
               Computer Science with Software Development (Upper-Second class).
             </ExperienceItem>
           </div>
