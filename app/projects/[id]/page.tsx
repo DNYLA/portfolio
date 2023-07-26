@@ -4,6 +4,8 @@ import React from 'react';
 import { Project } from '@/lib/types';
 import Section from '@/components/section';
 import Heading from '@/components/heading';
+import Tag from '@/components/tag';
+import TagContainer from '@/app/projects/[id]/components/tag-container';
 
 export const dynamicParams = false; //Any item not prefetched above is incorrect
 
@@ -20,13 +22,18 @@ export default async function Page({ params }: { params: { id: string } }) {
     <div>
       <div className="flex flex-col mt-14 gap-8">
         <Section delay={0.1}>
-          <Heading>Introduction</Heading>
-          <p className="text-base font-light indent-8">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non vel
-            perspiciatis dolorum nam odit possimus quaerat ea quidem earum atque
-            fuga consectetur officiis neque, doloribus rem nemo assumenda
-            facilis voluptates InkDrop.
+          <p className="text-base whitespace-pre-line font-light mb-5 px-12">
+            {data.description}
           </p>
+          <TagContainer data={data} />
+          {/* <div className="flex flex-col mt-4 gap-y-2 ">
+            <Tag title="Year">
+              <p className="">{data.year}</p>
+            </Tag>
+            <Tag title="Website">{data.website ?? 'N/A'}</Tag>
+            <Tag title="Platform">{data.platform}</Tag>
+            <Tag title="Stack">{data.stack}</Tag>
+          </div> */}
         </Section>
 
         <Section delay={0.2}>

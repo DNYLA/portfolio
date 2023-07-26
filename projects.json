@@ -1,77 +1,84 @@
 [
   {
     "name": "Melodiy",
-    "description": "Labmaker is an app",
-    "year": "2021",
-    "platform": "Windows/MacOS/Linux",
-    "stack": "NodeJS, NestJS & React",
+    "description": "Music streaming application which will be available on the web, desktop & mobile. This application is currently in its alpha/proof of concept stage, only the designs have been made.",
+    "year": "2023",
+    "platform": "Windows/MacOS/Linux/Mobile",
+    "stack": "NestJS (Potentially Rust)/ NextJS / Electron / ReactNative",
+    "repo": "https://github.com/MelodiyMusic",
     "cover": "https://avatars.githubusercontent.com/u/139715671?s=200&v=4",
     "images": [
-      "/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F22224922%3Fv%3D4&w=384&q=75"
+      "https://user-images.githubusercontent.com/22224922/255356276-5379e2a3-eb42-44ee-a2a9-20cc3e410908.png"
     ]
   },
   {
     "name": "Labmaker",
-    "description": "Labmaker is an app",
+    "description": "The ultimate way to engage and interact with your community on a range of platforms. Labmaker is used to help grow a community & interact with them. The Reddit Bot & Admin Dashboard are designed to be ambiguous, however the Discord & User Dashboard is designed to interact specifically with tutors and students. They can be edited to suite your own needs but require more time to change than the Admin Dashboard & Reddit Bot.",
     "year": "2021",
-    "platform": "Windows/MacOS/Linux",
-    "stack": "NodeJS, NestJS & React",
+    "platform": "Website",
+    "stack": "NestJS / React",
+    "repo": "https://github.com/DNYLA/Labmaker",
     "cover": "https://avatars.githubusercontent.com/u/83039187?s=200&v=4",
     "images": [
       "/images/labmaker1.png",
       "/images/labmaker2.png",
-      "/images/labmaker3.png"
+      "/images/labmaker3.png",
+      "/images/labmaker4.png",
+      "/images/labmaker5.png",
+      "/images/labmaker6.png",
+      "/images/labmaker7.png",
+      "/images/labmaker8.png"
     ]
   },
   {
     "name": "Couragames",
-    "description": "Labmaker is an app",
-    "year": "2021",
-    "platform": "Windows/MacOS/Linux",
-    "stack": "NodeJS, NestJS & React",
+    "description": "Online game platform which allows you to talk and compete against your friends.\n\nCurrent Games\nRock, Paper, Scissors\nTic, Tac Toe.\n\nKey Features\nAdd Friends & Invite them to games\nDaily, Weekly & Global Leaderboard system for each game.\nCustomise your profile by adding a status & profile picture.\nView Member profile (Comments, View past games & view their stats)\nChat to people in real time (Group Messages coming soon)\n",
+    "year": "2022",
+    "platform": "Website",
+    "stack": "Next.js 12 / Express",
+    "repo": "https://github.com/DNYLA/coura-games",
     "cover": "/images/saran-logo.png",
     "images": [""]
   },
   {
     "name": "Saran",
-    "description": "Labmaker is an app",
-    "year": "2021",
-    "platform": "Windows/MacOS/Linux",
-    "stack": "NodeJS, NestJS & React",
-    "cover": "",
-    "images": ["/images/saran-logo.png"]
-  },
-  {
-    "name": "FeedMe",
-    "description": "Labmaker is an app",
-    "year": "2021",
-    "platform": "Windows/MacOS/Linux",
-    "stack": "NodeJS, NestJS & React",
-    "cover": "",
-    "images": [
-      "/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F22224922%3Fv%3D4&w=384&q=75"
-    ]
+    "description": "Saran is a discord bot which allows users to interact with their last.fm account on discord displaying their music stats to other users with ease. Moderation & Search commands that use other external APIS are also included (Image Search, Riddle, Youtube, Ban, etc) ",
+    "year": "2022",
+    "platform": "Discord",
+    "stack": "NodeJS / Discord.js",
+    "repo": "https://github.com/DNYLA/Saran",
+    "cover": "/images/saran-logo.png",
+    "images": [""]
   },
   {
     "name": "TapTapFarmer",
-    "description": "Labmaker is an app",
-    "year": "2021",
-    "platform": "Windows/MacOS/Linux",
-    "stack": "NodeJS, NestJS & React",
-    "cover": "",
-    "images": [
-      "/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F22224922%3Fv%3D4&w=384&q=75"
-    ]
+    "description": "TapTapFarmer is a bot which i made for an android game called TapTapHeroes. The bot would automatically complete daily tasks and attempt to attack at set intervals. This codebase uses screenshots to check for fixed colours at set coordinates to calculate where the bot is, this is extrememly inefficient especially since it is handled externally using windows API to move the mouse & capture screenshots. I attempted a rework of creating a simpler game bot https://github.com/DNYLA/Stick-Hero-Android-Bot which connects to the ADB client and directly inputs with the android device/emulator. ",
+    "year": "2019",
+    "platform": "Windows",
+    "stack": "C# / WPF",
+    "repo": "https://github.com/DNYLA/TapTapFarmer",
+    "cover": "/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F22224922%3Fv%3D4&w=384&q=75",
+    "images": [""]
+  },
+  {
+    "name": "FeedMe",
+    "description": "This application was my first ever full-stack application where i learned the fundementals of software development that i use in all my current and future projects. The application was a food ordering app which had two seperate frontends for vendors & customers. A customer would order items that were available from a store of their choice and pay for their food which is processed via stripe. You can see from the codebase that i didn't understand that much about what i was using as the sockets connection works more like an API instead of an event based system.",
+    "year": "2019",
+    "platform": "Windows",
+    "stack": "C# / WinForms",
+    "repo": "https://github.com/DNYLA/FeedMe",
+    "cover": "/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F22224922%3Fv%3D4&w=384&q=75",
+    "images": [""]
   },
   {
     "name": "Aquamans-CQC",
-    "description": "Labmaker is an app",
-    "year": "2021",
-    "platform": "Windows/MacOS/Linux",
-    "stack": "NodeJS, NestJS & React",
-    "cover": "",
+    "description": "Aquamans CQC is a popular CQC gamemode for arma 3. The gamemode was made as an improvement from other CQC gamemodes which have now died out, this improved version involves a better spawn system, simple vehicle spawn menu, teleporter and a new notification system. The notification system was also publicised, alot of arma 3 servers use my notification system & 90% of CQC servers are using an edited version of this mission file. I have done a few updates for this repo including a dynamic spawn system instead of having to copy and paste the whole file again however theese updates were paid updates that belong to a server.",
+    "year": "2019",
+    "platform": "Windows",
+    "stack": "SQF / Arma3",
+    "repo": "https://github.com/DNYLA/Aquamans-CQC",
+    "cover": "/images/arma3.png",
     "images": [
-      "/images/arma3.png",
       "https://camo.githubusercontent.com/418bd447c87523e1044bcbf0b31f399dd408fec391be2d28b52ef28d87cb5525/68747470733a2f2f692e6779617a6f2e636f6d2f64376632353632633635383634333762333161376430323165643332313737382e6a7067",
       "https://camo.githubusercontent.com/45c3ebf29a1046b3619ecc488675dbf3a0fe048c5ca5de7dd380382fb6d4e82f/68747470733a2f2f692e6779617a6f2e636f6d2f65303465303362366437313562303235356632316465316534356562636236362e6a7067",
       "https://camo.githubusercontent.com/80001744b86b3ad9cf11e9228c85dcabd82e4696483792edf717021d6ce3a277/68747470733a2f2f692e6779617a6f2e636f6d2f33663862626334633566366565613263333663643262313532336562643836632e6a7067",
