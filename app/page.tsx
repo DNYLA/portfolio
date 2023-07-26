@@ -6,7 +6,11 @@ import PageHeader from '@/components/page-header';
 import Section from '@/components/section';
 import Link from 'next/link';
 import NextLink from 'next/link';
-import { AiFillAlipayCircle, AiOutlineGithub } from 'react-icons/ai';
+import {
+  AiFillAlipayCircle,
+  AiOutlineGithub,
+  AiOutlineMail,
+} from 'react-icons/ai';
 
 export default function Home() {
   return (
@@ -76,6 +80,11 @@ export default function Home() {
             <Link href={'https://github.com/DNYLA'} target="_blank">
               <IconButton icon={<AiOutlineGithub size={20} />}>
                 Github
+              </IconButton>
+            </Link>
+            <Link href={'mailto: danyaal.ahmed2@gmail.com'} target="_blank">
+              <IconButton icon={<AiOutlineMail size={20} />}>
+                danyaal.ahmed2@gmail.com
               </IconButton>
             </Link>
           </div>
