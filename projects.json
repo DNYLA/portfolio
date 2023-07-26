@@ -38,7 +38,7 @@
     "stack": "Next.js 12 / Express",
     "repo": "https://github.com/DNYLA/coura-games",
     "cover": "/images/saran-logo.png",
-    "images": [""]
+    "images": []
   },
   {
     "name": "Saran",
@@ -48,7 +48,7 @@
     "stack": "NodeJS / Discord.js",
     "repo": "https://github.com/DNYLA/Saran",
     "cover": "/images/saran-logo.png",
-    "images": [""]
+    "images": []
   },
   {
     "name": "TapTapFarmer",
@@ -58,7 +58,7 @@
     "stack": "C# / WPF",
     "repo": "https://github.com/DNYLA/TapTapFarmer",
     "cover": "/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F22224922%3Fv%3D4&w=384&q=75",
-    "images": [""]
+    "images": []
   },
   {
     "name": "FeedMe",
@@ -68,7 +68,7 @@
     "stack": "C# / WinForms",
     "repo": "https://github.com/DNYLA/FeedMe",
     "cover": "/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F22224922%3Fv%3D4&w=384&q=75",
-    "images": [""]
+    "images": []
   },
   {
     "name": "Aquamans-CQC",
