@@ -40,7 +40,7 @@ export default async function Home() {
                 key={name}
                 title={name}
                 src={cover}
-                href={`/projects/${name}`}
+                href={`/projects/${name.toLowerCase()}`}
               />
             ))}
           </div>
