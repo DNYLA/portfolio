@@ -6,7 +6,7 @@ export const dynamicParams = false; //Any item not prefetched above is incorrect
 export default function Page({ params }: { params: { id: string } }) {
   return (
     <div>
-      <PageHeader title={params.id} />
+      <PageHeader>{params.id}</PageHeader>
     </div>
   );
 }

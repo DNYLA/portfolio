@@ -17,7 +17,7 @@ const PageHeader = ({ children }: PageHeaderProps) => {
         transition={{ duration: 0.8, delay: 0.1 }}
         className="text-xl text-left"
       >
-        {title}
+        {children}
       </motion.h1>
     </div>
   );

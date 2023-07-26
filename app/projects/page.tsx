@@ -8,7 +8,7 @@ export default async function Projects() {
 
   return (
     <main className="bg-red">
-      <PageHeader title="Projects" />
+      <PageHeader>Projects</PageHeader>
 
       <div className="flex flex-col mt-14 gap-8">
         {/* <Section delay={0.2}> */}

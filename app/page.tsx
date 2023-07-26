@@ -11,7 +11,7 @@ import { AiFillAlipayCircle, AiOutlineGithub } from 'react-icons/ai';
 export default function Home() {
   return (
     <main className="">
-      <PageHeader title="Fullstack Developer" />
+      <PageHeader>Fullstack Developer</PageHeader>
 
       <div className="flex flex-col mt-14 gap-8">
         <Section delay={0.1}>
