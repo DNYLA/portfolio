@@ -8,4 +8,5 @@ export type Project = {
   repo: string;
   cover: string;
   images: string[];
+  showcase?: boolean;
 };

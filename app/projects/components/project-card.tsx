@@ -39,11 +39,7 @@ const ProjectCard = ({ project, delay }: CardProps) => {
     >
       <Image
         className="border-solid max-w-[175px] rounded inline-block  group-hover:scale-110"
-        src={
-          project.images.length > 0
-            ? project.cover
-            : 'https://avatars.githubusercontent.com/u/22224922?v=4'
-        }
+        src={project.cover ?? '/images/no-image.jpg'}
         alt="Profile Image"
         // style={{ objectFit: 'contain' }}
         width={175}

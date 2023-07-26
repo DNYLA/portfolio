@@ -1,3 +1,4 @@
+import { getProjects } from '@/app/actions';
 import Button from '@/components/button';
 import Card from '@/components/card';
 import ExperienceItem from '@/components/experience-item';
@@ -13,7 +14,11 @@ import {
   AiOutlineMail,
 } from 'react-icons/ai';
 
-export default function Home() {
+export default async function Home() {
+  const data = (await getProjects())
+    .filter((item) => item.showcase !== false)
+    .slice(0, 3);
+
   return (
     <main className="">
       <PageHeader>Fullstack Developer</PageHeader>
@@ -30,21 +35,14 @@ export default function Home() {
         <Section delay={0.2}>
           <Heading>Projects</Heading>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-3 p-10">
-            <Card
-              title="Labmaker"
-              src="https://avatars.githubusercontent.com/u/83039187?s=200&v=4"
-              href="/projects/labmaker"
-            />
-            <Card
-              title="Couragames"
-              src="/images/saran-logo.png"
-              href="/projects/couragames"
-            />
-            <Card
-              title="Saran"
-              src="/images/saran-logo.png"
-              href="/projects/saran"
-            />
+            {data.map(({ name, cover }) => (
+              <Card
+                key={name}
+                title={name}
+                src={cover}
+                href={`/projects/${name}`}
+              />
+            ))}
           </div>
           <div className="flex items-center justify-center mt-2">
             <Link href={'/projects'}>
