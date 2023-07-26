@@ -3,6 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { M_PLUS_1_Code } from 'next/font/google';
 import Head from 'next/head';
+import Script from 'next/script';
 
 const mPlus1C = M_PLUS_1_Code({ subsets: ['latin'] });
 

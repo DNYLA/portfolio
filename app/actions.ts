@@ -12,3 +12,13 @@ export async function getProjects(): Promise<Project[]> {
 export async function getProjectNames(): Promise<string[]> {
   return projects.map((item) => item.name);
 }
+
+export async function getProjectByName(name: string): Promise<Project> {
+  const project = projects.find(
+    (item) => item.name.toLowerCase() === name.toLowerCase()
+  );
+
+  if (!project) throw new Error("Can't find project name");
+
+  return project;
+}

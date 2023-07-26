@@ -1,6 +1,6 @@
 'use server';
 import { getProjects } from '@/app/actions';
-import ProjectGrid from '@/app/projects/project-grid';
+import ProjectGrid from '@/app/projects/components/project-grid';
 import PageHeader from '@/components/page-header';
 
 export default async function Projects() {

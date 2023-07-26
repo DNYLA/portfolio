@@ -29,18 +29,18 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-3 p-10">
             <Card
               title="Labmaker"
-              image="https://insidescientific.com/wp-content/uploads/2021/05/LabMaker.jpg"
-              href="/projects?id=labmaker"
+              src="https://avatars.githubusercontent.com/u/83039187?s=200&v=4"
+              href="/projects/labmaker"
             />
             <Card
               title="Couragames"
-              image="https://insidescientific.com/wp-content/uploads/2021/05/LabMaker.jpg"
-              href="/projects?id=labmaker"
+              src="/images/saran-logo.png"
+              href="/projects/couragames"
             />
             <Card
               title="Saran"
-              image="https://insidescientific.com/wp-content/uploads/2021/05/LabMaker.jpg"
-              href="/projects?id=labmaker"
+              src="/images/saran-logo.png"
+              href="/projects/saran"
             />
           </div>
           <div className="flex items-center justify-center mt-2">

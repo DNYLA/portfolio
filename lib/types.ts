@@ -5,5 +5,6 @@ export type Project = {
   website?: string;
   platform: string;
   stack: string;
+  cover: string;
   images: string[];
 };

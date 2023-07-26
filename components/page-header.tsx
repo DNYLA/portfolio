@@ -1,5 +1,5 @@
 'use client';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import React from 'react';
 
@@ -11,14 +11,16 @@ const PageHeader = ({ children }: PageHeaderProps) => {
   return (
     <div className="flex flex-col gap-2 w-full align-middle text-center items-center justify-center">
       <h1 className="text-4xl">Danyaal Ahmed</h1>
-      <motion.h1
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.1 }}
-        className="text-xl text-left"
-      >
-        {children}
-      </motion.h1>
+      <AnimatePresence initial={true}>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="text-xl text-left"
+        >
+          {children}
+        </motion.h1>
+      </AnimatePresence>
     </div>
   );
 };
