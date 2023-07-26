@@ -35,7 +35,7 @@ const TagContainer = ({ data }: TagContainerProps) => {
         <p className="flex font-light text-base">{data.platform}</p>
         <p className="flex font-light text-base">{data.stack}</p>
         <Link
-          className="flex font-light text-base hover:text-teal-300 "
+          className="flex font-light text-base hover:text-teal-300 underline hover:no-underline"
           href={data.repo}
           target="_blank"
         >
