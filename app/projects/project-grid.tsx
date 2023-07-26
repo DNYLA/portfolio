@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ProjectCard from './project-card';
-import { useRouter } from 'next/navigation';
+import { Project } from '@/lib/types';
 
 type Props = {
   projects: Project[];
@@ -14,7 +14,7 @@ const ProjectGrid = ({ projects }: Props) => {
       opacity: 1,
       transition: {
         when: 'beforeChildren',
-        staggerChildren: 0.3,
+        staggerChildren: 0.2,
       },
     },
     hidden: {
@@ -49,7 +49,7 @@ const ProjectGrid = ({ projects }: Props) => {
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-3 p-10 gap-3"
     >
       {projects.map((item, i) => (
-        <ProjectCard key={i} project={item} delay={i * 0.1} />
+        <ProjectCard key={i} project={item} delay={i * 0.05} />
       ))}
     </motion.div>
   );

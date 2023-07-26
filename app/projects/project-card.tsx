@@ -1,4 +1,5 @@
 'use client';
+import { Project } from '@/lib/types';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
@@ -27,7 +28,7 @@ const ProjectCard = ({ project, delay }: CardProps) => {
   };
 
   const handleClick = () => {
-    router.push(`projects/${project.name}`);
+    router.push(`projects/${project.name.toLowerCase()}`);
   };
 
   return (
