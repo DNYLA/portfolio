@@ -13,6 +13,24 @@
     "showcase": false
   },
   {
+    "name": "Couragames",
+    "description": "Online game platform which allows you to talk and compete against your friends.\n\nCurrent Games\nRock, Paper, Scissors\nTic, Tac Toe.\n\nKey Features\nAdd Friends & Invite them to games\nDaily, Weekly & Global Leaderboard system for each game.\nCustomise your profile by adding a status & profile picture.\nView Member profile (Comments, View past games & view their stats)\nChat to people in real time (Group Messages coming soon)\n",
+    "year": "2022",
+    "platform": "Website",
+    "stack": "Next.js 12 / Express / Chakra-UI / Styled Components ",
+    "repo": "https://github.com/DNYLA/coura-games",
+    "cover": "/images/couragames/logo.png",
+    "images": [
+      "/images/couragames/home.png",
+      "/images/couragames/search.png",
+      "/images/couragames/tictactoe_lobby.png",
+      "/images/couragames/invite.png",
+      "/images/couragames/leaderboards.png",
+      "/images/couragames/profile_skeleton.png",
+      "/images/couragames/profile.png"
+    ]
+  },
+  {
     "name": "Labmaker",
     "description": "The ultimate way to engage and interact with your community on a range of platforms. Labmaker is used to help grow a community & interact with them. The Reddit Bot & Admin Dashboard are designed to be ambiguous, however the Discord & User Dashboard is designed to interact specifically with tutors and students. They can be edited to suite your own needs but require more time to change than the Admin Dashboard & Reddit Bot.",
     "year": "2021",
@@ -29,24 +47,6 @@
       "/images/labmaker6.png",
       "/images/labmaker7.png",
       "/images/labmaker8.png"
-    ]
-  },
-  {
-    "name": "Couragames",
-    "description": "Online game platform which allows you to talk and compete against your friends.\n\nCurrent Games\nRock, Paper, Scissors\nTic, Tac Toe.\n\nKey Features\nAdd Friends & Invite them to games\nDaily, Weekly & Global Leaderboard system for each game.\nCustomise your profile by adding a status & profile picture.\nView Member profile (Comments, View past games & view their stats)\nChat to people in real time (Group Messages coming soon)\n",
-    "year": "2022",
-    "platform": "Website",
-    "stack": "Next.js 12 / Express / Chakra-UI / Styled Components ",
-    "repo": "https://github.com/DNYLA/coura-games",
-    "cover": "/images/couragames/logo.png",
-    "images": [
-      "/images/couragames/home.png",
-      "/images/couragames/search.png",
-      "/images/couragames/tictactoe_lobby.png",
-      "/images/couragames/invite.png",
-      "/images/couragames/leaderboards.png",
-      "/images/couragames/profile_skeleton.png",
-      "/images/couragames/profile.png"
     ]
   },
   {
