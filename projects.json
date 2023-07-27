@@ -3,8 +3,8 @@
     "name": "Melodiy",
     "description": "Music streaming application which will be available on the web, desktop & mobile. This application is currently in its alpha/proof of concept stage, only the designs have been made.",
     "year": "2023",
-    "platform": "Windows/MacOS/Linux/Mobile",
-    "stack": "NestJS (Potentially Rust)/ NextJS / Electron / ReactNative",
+    "platform": "Windows / MacOS / Linux / Mobile",
+    "stack": "NestJS (Potentially Rust) / NextJS / Electron / ReactNative",
     "repo": "https://github.com/MelodiyMusic",
     "cover": "https://avatars.githubusercontent.com/u/139715671?s=200&v=4",
     "images": [
@@ -17,7 +17,7 @@
     "description": "The ultimate way to engage and interact with your community on a range of platforms. Labmaker is used to help grow a community & interact with them. The Reddit Bot & Admin Dashboard are designed to be ambiguous, however the Discord & User Dashboard is designed to interact specifically with tutors and students. They can be edited to suite your own needs but require more time to change than the Admin Dashboard & Reddit Bot.",
     "year": "2021",
     "platform": "Website",
-    "stack": "NestJS / React",
+    "stack": "NestJS / React / Styled Components",
     "repo": "https://github.com/DNYLA/Labmaker",
     "cover": "https://avatars.githubusercontent.com/u/83039187?s=200&v=4",
     "images": [
@@ -36,7 +36,7 @@
     "description": "Online game platform which allows you to talk and compete against your friends.\n\nCurrent Games\nRock, Paper, Scissors\nTic, Tac Toe.\n\nKey Features\nAdd Friends & Invite them to games\nDaily, Weekly & Global Leaderboard system for each game.\nCustomise your profile by adding a status & profile picture.\nView Member profile (Comments, View past games & view their stats)\nChat to people in real time (Group Messages coming soon)\n",
     "year": "2022",
     "platform": "Website",
-    "stack": "Next.js 12 / Express",
+    "stack": "Next.js 12 / Express / Chakra-UI / Styled Components ",
     "repo": "https://github.com/DNYLA/coura-games",
     "cover": "/images/couragames/logo.png",
     "images": [
