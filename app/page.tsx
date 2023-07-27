@@ -58,8 +58,14 @@ export default async function Home() {
               Born in United Kingdom
             </ExperienceItem>
 
+            <ExperienceItem year={'2019'}>
+              Employed at Morrisons as a Customer Assistant{' '}
+              <span className="font-normal">(OCT 2019 - AUG 2020)</span>
+            </ExperienceItem>
+
             <ExperienceItem year={'2021'}>
-              Founded and worked at Labmaker
+              Founded and worked at Labmaker{' '}
+              <span className="font-normal">(MAR 2021 - MAY 2022)</span>
             </ExperienceItem>
 
             <ExperienceItem year={'2023'}>
