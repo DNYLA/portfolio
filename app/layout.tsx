@@ -27,7 +27,7 @@ export default function RootLayout({
       <body className={`${mPlus1C.className}`}>
         <Navbar />
         {/* TODO: Find a better way than having to set padding to 300PX? */}
-        <div className="container mx-auto p-5 2xl:px-[400px] mt-24">
+        <div className="container mx-auto mt-24 p-5 2xl:px-[400px]">
           {children}
         </div>
       </body>

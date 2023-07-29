@@ -9,14 +9,14 @@ interface PageHeaderProps {
 
 const PageHeader = ({ children }: PageHeaderProps) => {
   return (
-    <div className="flex flex-col gap-2 w-full align-middle text-center items-center justify-center">
+    <div className="flex w-full flex-col items-center justify-center gap-2 text-center align-middle">
       <h1 className="text-4xl">Danyaal Ahmed</h1>
       <AnimatePresence initial={true}>
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="text-xl text-left"
+          className="text-left text-xl"
         >
           {children}
         </motion.h1>

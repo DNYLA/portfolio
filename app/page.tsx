@@ -23,10 +23,10 @@ export default async function Home() {
     <main className="">
       <PageHeader>Fullstack Developer</PageHeader>
 
-      <div className="flex flex-col mt-14 gap-8">
+      <div className="mt-14 flex flex-col gap-8">
         <Section delay={0.1}>
           <Heading>Introduction</Heading>
-          <p className="text-base font-light indent-8">
+          <p className="indent-8 text-base font-light">
             I spend all my time making open source full stack applicatons that
             get used by only me.
           </p>
@@ -34,7 +34,7 @@ export default async function Home() {
 
         <Section delay={0.2}>
           <Heading>Projects</Heading>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-3 p-10">
+          <div className="grid grid-cols-1 p-10 py-3 sm:grid-cols-2 lg:grid-cols-3">
             {data.map(({ name, cover }) => (
               <Card
                 key={name}
@@ -44,7 +44,7 @@ export default async function Home() {
               />
             ))}
           </div>
-          <div className="flex items-center justify-center mt-2">
+          <div className="mt-2 flex items-center justify-center">
             <Link href={'/projects'}>
               <Button>View All</Button>
             </Link>

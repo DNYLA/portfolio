@@ -7,7 +7,7 @@ const Breadcrumb = async () => {
 
   return (
     <ol
-      className="flex items-center whitespace-nowrap min-w-0 mt-[4px]"
+      className="mt-[4px] flex min-w-0 items-center whitespace-nowrap"
       aria-label="Breadcrumb"
     >
       <li className="text-sm">
@@ -17,7 +17,7 @@ const Breadcrumb = async () => {
         >
           Projects
           <svg
-            className="flex-shrink-0 mx-3 overflow-visible h-2.5 w-2.5 text-gray-400 dark:text-gray-600"
+            className="mx-3 h-2.5 w-2.5 flex-shrink-0 overflow-visible text-gray-400 dark:text-gray-600"
             width="16"
             height="16"
             viewBox="0 0 16 16"
@@ -34,7 +34,7 @@ const Breadcrumb = async () => {
         </Link>
       </li>
       <li
-        className="text-sm font-semibold text-gray-800 truncate dark:text-gray-200"
+        className="truncate text-sm font-semibold text-gray-800 dark:text-gray-200"
         aria-current="page"
       >
         <ProjectSelect data={projectNames} />

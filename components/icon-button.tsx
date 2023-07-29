@@ -20,14 +20,14 @@ const IconButton = ({
     <button
       onClick={onClick}
       className={twMerge(
-        'inline-flex bg-inherit rounded items-center text-white group',
+        'group inline-flex items-center rounded bg-inherit text-white',
         className
       )}
     >
-      <div className="flex rounded-l bg-[#315bdd] items-center p-1 h-full">
+      <div className="flex h-full items-center rounded-l bg-[#315bdd] p-1">
         <span className="group-hover:scale-110">{icon}</span>
       </div>
-      <span className="flex rounded-r bg-[#1d1d1d] items-center px-4 p-1 h-full text-sm">
+      <span className="flex h-full items-center rounded-r bg-[#1d1d1d] p-1 px-4 text-sm">
         {children}
       </span>
     </button>

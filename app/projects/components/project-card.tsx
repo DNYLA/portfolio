@@ -6,50 +6,50 @@ import { useRouter } from 'next/navigation';
 import React from 'react';
 
 interface CardProps {
-  project: Project;
-  delay?: number;
+	project: Project;
+	delay?: number;
 }
 
 const ProjectCard = ({ project, delay }: CardProps) => {
-  const router = useRouter();
+	const router = useRouter();
 
-  const variant = {
-    visible: {
-      opacity: 1,
-      x: 0,
-      y: 0,
-      transition: {
-        ease: 'linear',
-        duration: 2,
-        x: { duration: 1 },
-      },
-    },
-    hidden: { opacity: 0, x: 0, y: -20 },
-  };
+	const variant = {
+		visible: {
+			opacity: 1,
+			x: 0,
+			y: 0,
+			transition: {
+				ease: 'linear',
+				duration: 2,
+				x: { duration: 1 },
+			},
+		},
+		hidden: { opacity: 0, x: 0, y: -20 },
+	};
 
-  const handleClick = () => {
-    router.push(`projects/${project.name.toLowerCase()}`);
-  };
+	const handleClick = () => {
+		router.push(`projects/${project.name.toLowerCase()}`);
+	};
 
-  return (
-    <motion.div
-      className="flex flex-col rounded-md bg-[#202023] cursor-pointer group hover:bg-[#313134] hover:scale-150 hover:skew-y-2 transition items-center pt-4 p-2"
-      variants={variant}
-      onClick={handleClick}
-    >
-      <Image
-        className="border-solid max-w-[175px] rounded inline-block  group-hover:scale-110"
-        src={project.cover ?? '/images/no-image.jpg'}
-        alt="Profile Image"
-        // style={{ objectFit: 'contain' }}
-        width={175}
-        height={175}
-      />
-      <span className="text-neutral-300 group-hover:scale-110 mt-2">
-        {project.name}
-      </span>
-    </motion.div>
-  );
+	return (
+		<motion.div
+			className="group flex cursor-pointer flex-col items-center rounded-md bg-[#202023] p-2 pt-4 transition hover:skew-y-2 hover:scale-150 hover:bg-[#313134]"
+			variants={variant}
+			onClick={handleClick}
+		>
+			<Image
+				className="inline-block max-w-[175px] rounded border-solid  group-hover:scale-110"
+				src={project.cover ?? '/images/no-image.jpg'}
+				alt="Profile Image"
+				// style={{ objectFit: 'contain' }}
+				width={175}
+				height={175}
+			/>
+			<span className="mt-2 text-neutral-300 group-hover:scale-110">
+				{project.name}
+			</span>
+		</motion.div>
+	);
 };
 
 export default ProjectCard;

@@ -22,13 +22,13 @@ export default function NotFound() {
         {/* TODO: Find a better way than having to set padding to 300PX? */}
         <div className="container mx-auto p-5 2xl:px-[400px]">
           <main className="flex h-screen">
-            <div className="flex flex-col gap-2 w-full align-middle text-center items-center m-auto">
+            <div className="m-auto flex w-full flex-col items-center gap-2 text-center align-middle">
               <h1 className="text-4xl">Not Found</h1>
-              <h1 className="text-xl text-left">
+              <h1 className="text-left text-xl">
                 The Page you are looking for doesn&#39;t exist
               </h1>
               <Link href={'/'}>
-                <Button className="text-white flex items-center gap-x-1">
+                <Button className="flex items-center gap-x-1 text-white">
                   <AiFillHome />
                   Home
                 </Button>

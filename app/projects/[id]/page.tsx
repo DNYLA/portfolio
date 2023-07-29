@@ -20,9 +20,9 @@ export default async function Page({ params }: { params: { id: string } }) {
 
   return (
     <div>
-      <div className="flex flex-col mt-14 gap-8">
+      <div className="mt-14 flex flex-col gap-8">
         <Section delay={0.1}>
-          <p className="text-base whitespace-pre-line font-light mb-5 px-12">
+          <p className="mb-5 whitespace-pre-line px-12 text-base font-light">
             {data.description}
           </p>
           <TagContainer data={data} />

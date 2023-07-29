@@ -10,7 +10,7 @@ export default async function Projects() {
     <main className="bg-red">
       <PageHeader>Projects</PageHeader>
 
-      <div className="flex flex-col mt-14 gap-8">
+      <div className="mt-14 flex flex-col gap-8">
         {/* <Section delay={0.2}> */}
         {/* <h1
             className={
@@ -22,6 +22,8 @@ export default async function Projects() {
 
         {/* </Section> */}
         <ProjectGrid projects={data} />
+
+        <div className="p-x-5 flex bg-sky-700 text-white"></div>
       </div>
     </main>
   );

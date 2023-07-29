@@ -16,7 +16,7 @@ const NavItem = ({ href, path, children }: NavItemProps) => {
   return (
     <NextLink
       href={href}
-      className={`hover:opacity-50 hover:scale-[115%] scale-100 transition-all`}
+      className={`scale-100 transition-all hover:scale-[115%] hover:opacity-50`}
     >
       <span className={``}>{children}</span>
     </NextLink>
@@ -27,14 +27,14 @@ const Navbar = () => {
   const path = usePathname();
 
   return (
-    <div className="fixed w-full h-[50px] top-0 z-10">
-      <div className="p-2 container flex mx-auto justify-center gap-x-8 backdrop-blur-3xl">
+    <div className="fixed top-0 z-10 h-[50px] w-full">
+      <div className="container mx-auto flex justify-center gap-x-8 p-2 backdrop-blur-3xl">
         <Link href={'/'}>
-          <h1 className="text-2xl font-medium cursor-pointer hover:opacity-75 transition ">
+          <h1 className="cursor-pointer text-2xl font-medium transition hover:opacity-75 ">
             Danyaal Ahmed
           </h1>
         </Link>
-        <div className="flex gap-x-3 items-center text-base">
+        <div className="flex items-center gap-x-3 text-base">
           <NavItem href="/projects" path={path}>
             Projects
           </NavItem>

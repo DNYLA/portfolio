@@ -34,12 +34,12 @@ const Card = ({ title, src, href, delay }: CardProps) => {
 
   return (
     <motion.div
-      className="flex flex-col cursor-pointer hover:scale-110 transition group items-center"
+      className="group flex cursor-pointer flex-col items-center transition hover:scale-110"
       variants={variant}
       onClick={handleClick}
     >
       <Image
-        className="border-solid max-w-[175px] inline-block rounded hover:skew-y-2 hover:skew-x-4"
+        className="hover:skew-x-4 inline-block max-w-[175px] rounded border-solid hover:skew-y-2"
         src={src}
         width={175}
         height={175}

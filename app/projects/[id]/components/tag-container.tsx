@@ -12,7 +12,7 @@ interface TagContainerProps {
 const TagContainer = ({ data }: TagContainerProps) => {
   const TagTitle = (title: string) => {
     return (
-      <span className="uppercase text-xs text-center font-bold mr-1 px-2 py-1 rounded bg-green-700 text-green-200 items-end">
+      <span className="mr-1 items-end rounded bg-green-700 px-2 py-1 text-center text-xs font-bold uppercase text-green-200">
         {title}
       </span>
     );
@@ -21,7 +21,7 @@ const TagContainer = ({ data }: TagContainerProps) => {
   /* Should i create them like this: NO; do i know how to align them together as individual componenets: NO (someone help 😭) */
   return (
     <div className="flex">
-      <div className="flex flex-col gap-y-2 items-end">
+      <div className="flex flex-col items-end gap-y-2">
         {TagTitle('Year')}
         {TagTitle('Website')}
         {TagTitle('Platform')}
@@ -29,13 +29,13 @@ const TagContainer = ({ data }: TagContainerProps) => {
         {TagTitle('Github')}
       </div>
 
-      <div className="flex flex-col gap-y-2 ml-2">
-        <p className="flex font-light text-base">{data.year}</p>
-        <p className="flex font-light text-base">{data.website ?? 'N/A'}</p>
-        <p className="flex font-light text-base">{data.platform}</p>
-        <p className="flex font-light text-base">{data.stack}</p>
+      <div className="ml-2 flex flex-col gap-y-2">
+        <p className="flex text-base font-light">{data.year}</p>
+        <p className="flex text-base font-light">{data.website ?? 'N/A'}</p>
+        <p className="flex text-base font-light">{data.platform}</p>
+        <p className="flex text-base font-light">{data.stack}</p>
         <Link
-          className="flex font-light text-base hover:text-teal-300 underline hover:no-underline"
+          className="flex text-base font-light underline hover:text-teal-300 hover:no-underline"
           href={data.repo}
           target="_blank"
         >
