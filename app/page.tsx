@@ -7,12 +7,7 @@ import IconButton from '@/components/icon-button';
 import PageHeader from '@/components/page-header';
 import Section from '@/components/section';
 import Link from 'next/link';
-import NextLink from 'next/link';
-import {
-  AiFillAlipayCircle,
-  AiOutlineGithub,
-  AiOutlineMail,
-} from 'react-icons/ai';
+import { AiOutlineGithub, AiOutlineMail } from 'react-icons/ai';
 
 export default async function Home() {
   const data = (await getProjects())
@@ -65,7 +60,7 @@ export default async function Home() {
 
             <ExperienceItem year={'2021'}>
               Founded and worked at Labmaker{' '}
-              <span className="font-normal">(MAR 2021 - MAY 2022)</span>
+              <span className="font-normal">(FEB 2021 - APR 2022)</span>
             </ExperienceItem>
 
             <ExperienceItem year={'2023'}>

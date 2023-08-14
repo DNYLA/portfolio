@@ -39,7 +39,7 @@ const Card = ({ title, src, href, delay }: CardProps) => {
       onClick={handleClick}
     >
       <Image
-        className="hover:skew-x-4 inline-block max-w-[175px] rounded border-solid hover:skew-y-2"
+        className="hover:skew-x-4 inline-block  max-w-[175px] rounded border-solid hover:skew-y-2"
         src={src}
         width={175}
         height={175}
