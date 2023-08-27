@@ -1,14 +1,19 @@
 [
 	{
 		"name": "Melodiy",
-		"description": "Music streaming application which will be available on the web, desktop & mobile. This application is currently in alpha only the authentication and creating a playlist has been completed.",
+		"description": "Music streaming application which is currently in beta availble on the web, future plans include a desktop & mobile app. Currently users can upload, create and listen to playlists. You can also view other recently created playlists by other users.",
 		"year": "2023",
 		"platform": "Windows / MacOS / Linux / Mobile",
-		"stack": "NestJS (Potentially Rust) / NextJS / Electron / ReactNative",
-		"repo": "https://github.com/MelodiyMusic",
-		"cover": "https://avatars.githubusercontent.com/u/139715671?s=200&v=4",
+		"stack": "C# (.Net Core 7) / Entity Framework / NextJS 13",
+		"repo": "https://github.com/DNYLA/Melodiy",
+		"website": "https://melodiy.net",
+    "cover": "https://avatars.githubusercontent.com/u/139715671?s=200&v=4",
 		"images": [
-			"https://user-images.githubusercontent.com/22224922/255356276-5379e2a3-eb42-44ee-a2a9-20cc3e410908.png"
+			"/images/melodiy/melodiy1.png",
+			"/images/melodiy/melodiy2.png",
+			"/images/melodiy/melodiy3.png",
+			"/images/melodiy/melodiy4.png"
+
 		]
 	},
 	{

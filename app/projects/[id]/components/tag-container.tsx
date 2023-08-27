@@ -31,7 +31,18 @@ const TagContainer = ({ data }: TagContainerProps) => {
 
       <div className="ml-2 flex flex-col gap-y-2">
         <p className="flex text-base font-light">{data.year}</p>
-        <p className="flex text-base font-light">{data.website ?? 'N/A'}</p>
+
+        {data.website ? (
+          <Link
+            href={data.website}
+            className="flex text-base font-light underline hover:text-teal-300 hover:no-underline"
+            target="_blank"
+          >
+            {data.website ?? 'N/A'}
+          </Link>
+        ) : (
+          <span>N/A</span>
+        )}
         <p className="flex text-base font-light">{data.platform}</p>
         <p className="flex text-base font-light">{data.stack}</p>
         <Link
