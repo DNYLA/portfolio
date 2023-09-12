@@ -63,10 +63,10 @@ export default async function Home() {
               <span className="font-normal">(FEB 2021 - APR 2022)</span>
             </ExperienceItem>
 
-            <ExperienceItem year={'2023'}>
+            {/* <ExperienceItem year={'2023'}>
               Graduated Bachelor&#39;s program at University of Liverpool for
               Computer Science with Software Development (Upper-Second class).
-            </ExperienceItem>
+            </ExperienceItem> */}
           </div>
         </Section>
 
