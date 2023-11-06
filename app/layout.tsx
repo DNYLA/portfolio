@@ -3,9 +3,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { M_PLUS_1_Code } from 'next/font/google';
 import Head from 'next/head';
-import Script from 'next/script';
 
-const mPlus1C = M_PLUS_1_Code({ subsets: ['latin'] });
+const font = M_PLUS_1_Code({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Danyaal Ahmed',
@@ -24,7 +23,7 @@ export default function RootLayout({
         <title>Danyaal Ahmed - Homepage</title>
       </Head>
 
-      <body className={`${mPlus1C.className}`}>
+      <body className={`${font.className}`}>
         <Navbar />
         {/* TODO: Find a better way than having to set padding to 300PX? */}
         <div className="container mx-auto mt-24 p-5 2xl:px-[400px]">
